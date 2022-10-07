@@ -21,6 +21,12 @@
 	/* background: #00804b; */
 	padding: 30px 0;
 	font-family: 'Ubuntu', sans-serif;
+	transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+	background: #00804b;
+	padding: 15px 0;
 }
 
 .navbar .max-width {
@@ -33,6 +39,15 @@
 	color: #fff;
 	font-size: 35px;
 	font-weight: 500;
+}
+
+.navbar .logo a span {
+	color: #00804b;
+	transition: all 0.3 ease;
+}
+
+.navbar.sticky .logo a span {
+	color: #fff;
 }
 
 .navbar .menu li {
@@ -50,6 +65,10 @@
 
 .navbar .menu li a:hover {
 	color: #00804b;
+}
+
+.navbar.sticky .menu li a:hover {
+	color: #fff;
 }
 
 /* Home início */ 
@@ -85,4 +104,35 @@
 .home .home-content .text-3 span {
 	color: #00804b;
 	font-weight: 500;
+}
+
+ /* Menu Mobile */
+ .menu-btn {
+ 	color: #fff;
+ 	font-size: 26px;
+ 	cursor: pointer;
+ 	display: none;
+ }
+
+ /* responsivo */
+ @media (max-width: 947px) {
+ 	.max-width {
+	padding: 0 50px;
+	}
+	.navbar .menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		background: #111;
+	}
+	.navbar.menu li {
+		display: ???;
+	}
+	.navbar.menu li a {
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
 }
