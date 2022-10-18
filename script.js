@@ -9,10 +9,12 @@ $(document).ready(function() {
 
 	$('.menu-btn').click(function(){
 		$('.navbar .menu').toggleClass("active");
+		$('.menu-btn i').toggleClass("active");
 	});
 	$('.carousel').owlCarousel({
 		margin:20,
 		loop:true,
+		dots:true,
 		autoplayTimeOut:2000,
 		autoplayHoverPauser:true,
 		responsive:{

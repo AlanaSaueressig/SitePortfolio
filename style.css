@@ -377,7 +377,11 @@ section .title::after {
 	border-radius: 6px;
 	padding: 25px 35px;
 	text-align: center;
-	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+	background: #00804b;
 }
 
 .teams .carousel .card img {
@@ -386,6 +390,11 @@ section .title::after {
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid #00804b;
+	transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+	border-color: #fff;
 }
 
 .teams .carousel .card .box {
@@ -393,12 +402,34 @@ section .title::after {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+	transform: scale(1.05);
 }
 
 .teams .carousel .card .text {
 	font-size: 25px;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
+}
+
+.owl-dots {
+	text-align: center;
+}
+
+.owl-dot .owl-theme{
+	width: 10px;
+	height: 10px;
+	outline: none!important;
+	border-radius: 50%;
+	border-radius: 2px solid #00804b!important;
+}
+
+.owl-dot.active{
+	width: 35px;
+	border-radius: 15px;
 }
 
  /* responsivo */
