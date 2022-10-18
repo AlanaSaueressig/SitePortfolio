@@ -427,6 +427,10 @@ section .title::after {
 	border-radius: 2px solid #00804b!important;
 }
 
+.owl-theme .owl-dots .owl-dot {
+	width: 25px!important;
+}
+
 .owl-dot.active{
 	width: 35px;
 	border-radius: 15px;
@@ -551,4 +555,4 @@ section .title::after {
 	.home .home-content .text-3 {
 	font-size: 27px;
 }
-
+}
