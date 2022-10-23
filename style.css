@@ -551,10 +551,10 @@ section .title::after {
 	color: #00804b;
 	
 }
-
+  
  /* responsivo */
 @media (max-width: 1300px) {
- 	.navbar .max-width {
+ 	.navbar .max-width { 
  		margin-left: 0;
  	}
 	 .contact .contact-content {
